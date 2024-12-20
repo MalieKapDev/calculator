@@ -1,0 +1,102 @@
+:root {
+  /* Colors */
+  --heading-color: #212925;
+  --sub-heading-color: #343a40;
+  --content-color: #495057;
+  --background-color: #f8f9fa;
+  --container-color: #e9ecef;
+  --focus-color: #3dccc7;
+
+  /* Fonts */
+  --font-primary: "Roboto";
+  --font-secondary: "Poppins";
+  --font-heading: "Play Fair Display";
+  --font-logo: "DM Serif Display";
+
+  /* Text Size */
+  --text-lg-small: 12px;
+  --text-lg-detail: 14px;
+  --text-lg-body: 18px;
+  --text-lg-subtitle: 28px;
+  --text-lg-title: 32px;
+  --text-lg-display: 60px;
+
+  --text-md-small: 12px;
+  --text-md-detail: 14px;
+  --text-md-body: 16px;
+  --text-md-subtitle: 16px;
+  --text-md-title: 22px;
+  --text-md-display: 32px;
+
+  --text-sm-small: 10px;
+  --text-sm-detail: 12px;
+  --text-sm-body: 13px;
+  --text-sm-subtitle: 15px;
+  --text-sm-title: 17px;
+  --text-sm-display: 22px;
+}
+
+/* Style for Logo */
+.logo-container {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.logo {
+  font-family: var(--font-logo);
+  font-weight: 600;
+  color: var(--heading-color);
+  margin-top: 10px;
+  text-decoration: none;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+/* Style for Tag Line */
+.tag-line {
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--sub-heading-color);
+  margin-top: 10px;
+  line-height: 1.6;
+}
+
+/* Screen Adjustments */
+/* Small Screens */
+@media (min-width: 576px) {
+  /* Style for Logo */
+  .logo {
+    font-size: var(--text-sm-display);
+  }
+
+  /* Style for Tag Line */
+  .tag-line {
+    font-size: var(--text-sm-body);
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  /* Style for Logo */
+  .logo {
+    font-size: var(--text-md-display);
+  }
+
+  /* Style for Tag Line */
+  .tag-line {
+    font-size: var(--text-md-body);
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  /* Style for Logo */
+  .logo {
+    font-size: var(--text-lg-display);
+  }
+
+  /* Style for Tag Line */
+  .tag-line {
+    font-size: var(--text-lg-body);
+  }
+}
