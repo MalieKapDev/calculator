@@ -36,6 +36,7 @@
   --text-sm-display: 22px;
 }
 
+/* Styling for project container */
 .calculator-container {
   background-color: #ffffff;
   border: 2px solid var(--container-color);
@@ -43,4 +44,150 @@
   margin: 0 auto;
   text-align: center;
   padding: 13px 18px;
+}
+
+/* Styling for Calculator */
+.calculator {
+  background-color: var(--heading-color);
+  border: 8px solid var(--content-color);
+  border-radius: 6px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 10px 0;
+  font-family: var(--font-secondary);
+  width: 50%;
+}
+
+/* Styling for Calculator display */
+.calculator-display {
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* Styling for Calculator display input */
+.formulaScreen {
+  color: var(--content-color);
+  margin: 0 auto;
+  text-align: right;
+  padding: 10px 0;
+  width: 90%;
+}
+
+/* Styling for Calculator display output */
+.outputScreen {
+  color: var(--background-color);
+  margin: 0 auto;
+  text-align: right;
+  padding: 10px 0;
+  width: 90%;
+}
+
+/* Styling for Calculator Buttons container */
+.buttonPanel {
+  margin: 0 auto;
+  text-align: center;
+  width: 90%;
+}
+
+/* Button Styles */
+.action,
+.operator,
+.number {
+  border-radius: 8px;
+  height: 35px;
+  width: 38px;
+  font-size: var(--text-sm-detail);
+}
+
+/* Styling for Calculator Buttons */
+.action {
+  background-color: var(--content-color);
+  color: var(--background-color);
+  border: 1px solid var(--content-color);
+}
+
+.operator {
+  background-color: var(--focus-color);
+  color: var(--background-color);
+  border: 1px solid var(--focus-color);
+}
+
+.number {
+  background-color: var(--sub-heading-color);
+  color: var(--background-color);
+  border: 1px solid var(--sub-heading-color);
+}
+
+/* Screen Adjustments */
+/* Small Screens */
+@media (min-width: 576px) {
+  .formulaScreen {
+    font-size: var(--text-sm-body);
+  }
+
+  .outputScreen {
+    font-size: var(--text-sm-subtitle);
+  }
+
+  /* Button Styles */
+  .action,
+  .operator,
+  .number {
+    border-radius: 8px;
+    height: 35px;
+    width: 38px;
+    font-size: var(--text-sm-detail);
+  }
+}
+
+/* Medium Screens */
+@media (min-width: 768px) {
+  /* Styling for Calculator */
+  .calculator {
+    width: 40%;
+  }
+
+  .formulaScreen {
+    font-size: var(--text-md-body);
+  }
+
+  .outputScreen {
+    font-size: var(--text-md-subtitle);
+  }
+
+  /* Button Styles */
+  .action,
+  .operator,
+  .number {
+    border-radius: 12px;
+    height: 50px;
+    width: 55px;
+    font-size: var(--text-md-detail);
+  }
+}
+
+/* Large Screens */
+@media (min-width: 1024px) {
+  /* Styling for Calculator */
+  .calculator {
+    width: 35%;
+  }
+
+  .formulaScreen {
+    font-size: var(--text-lg-subtitle);
+  }
+
+  .outputScreen {
+    font-size: var(--text-lg-title);
+  }
+
+  /* Button Styles */
+  .action,
+  .operator,
+  .number {
+    border-radius: 24px;
+    height: 70px;
+    width: 75px;
+    font-size: var(--text-lg-body);
+  }
 }
