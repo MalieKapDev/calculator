@@ -25,7 +25,7 @@ function Project() {
             Discover the design decisions, challenges, and features that make it
             a standout project. Read my blog post{" "}
             <a
-              href="https://codewithmalie.com/pomodoro-timer-project-case-study/"
+              href="https://codewithmalie.com/calculator-project-case-study/"
               target="_blank"
               rel="noreferrer"
             >
@@ -36,7 +36,7 @@ function Project() {
           <p className="card-text">
             Check out the code for building this Calculator on{" "}
             <a
-              href="https://github.com/MalieKapDev/pomodoro-timer"
+              href="https://github.com/MalieKapDev/calculator"
               target="_blank"
               rel="noreferrer"
             >
